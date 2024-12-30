@@ -13,13 +13,13 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
 
   if (error) return null;
   return (
-    <MenuRoot>
+    <MenuRoot positioning={{ placement: "right-start" }}>
       <MenuTrigger asChild>
         <Button variant="outline">
           {selectedPlatform?.name || "Platforms"} <IoChevronDown />
         </Button>
       </MenuTrigger>
-      <MenuContent pos="absolute">
+      <MenuContent>
         {data.map((platform) => (
           <MenuItem
             key={platform.id}
