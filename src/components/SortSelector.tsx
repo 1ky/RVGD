@@ -24,11 +24,11 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
   return (
     <MenuRoot positioning={{ placement: "right-start" }}>
       <MenuTrigger asChild>
-        <Button variant="outline">
+        <Button variant="surface">
           Order by: {currentSortOrder?.label || "Relevance"} <IoChevronDown />
         </Button>
       </MenuTrigger>
-      <MenuContent width={10}>
+      <MenuContent width={10} position="absolute">
         {sortOrders.map((order) => (
           <MenuItem
             key={order.value}

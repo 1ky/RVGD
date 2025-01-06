@@ -15,11 +15,11 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   return (
     <MenuRoot positioning={{ placement: "right-start" }}>
       <MenuTrigger asChild>
-        <Button variant="outline">
+        <Button variant="surface">
           {selectedPlatform?.name || "Platforms"} <IoChevronDown />
         </Button>
       </MenuTrigger>
-      <MenuContent>
+      <MenuContent pos="absolute">
         {data.map((platform) => (
           <MenuItem
             key={platform.id}
