@@ -16,7 +16,12 @@ const SearchInput = () => {
       }}
     >
       <InputGroup startElement={<BsSearch />} width="100%">
-        <Input ref={ref} borderRadius={20} placeholder="Search games..." />
+        <Input
+          ref={ref}
+          borderRadius={20}
+          placeholder="Search games..."
+          variant="subtle"
+        />
       </InputGroup>
     </form>
   );
