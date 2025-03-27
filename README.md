@@ -1,4 +1,4 @@
-# GameHub - Videogame Discovery Application
+# RVGD - Videogame Discovery Application
 
 ## UI/UX
 
